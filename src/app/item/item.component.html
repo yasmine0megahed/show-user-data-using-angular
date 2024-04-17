@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <div class="center">
+            <img [src]="user.image" class="rounded-circle" alt="Circular Image">
+        </div>
+        <h5 class="card-title">{{user.username}} </h5>
+  
+        <i class="bi bi-star-fill" [ngClass]="{'text-success' : user.is_verified, 'text-danger': !user.is_verified}"></i>
+        <div class="card-text">{{user.email}}
+        </div>
+        <div class="card-text">{{user.phone}}
+        </div>
+    </div>
+</div>
